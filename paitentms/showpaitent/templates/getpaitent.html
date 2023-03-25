@@ -1,0 +1,11 @@
+<form action="search">
+    <input type="text" name="id"><br><br>
+    <button>Search</button>
+</form>
+{%if user%}
+<div>
+    <p>UserName : {{user.username}}</p>
+    <p>Date of Joined: {{user.date_joined}}</p>
+    <p>Unique ID: {{user.id}}</p>
+</div>
+{%endif%}
